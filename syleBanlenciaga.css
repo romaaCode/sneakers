@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+  background-image: url("image/Background/bgbalenciaga.jpg");
+
+  /*background-color: darkkhaki;*/
+   
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    padding-top: 30px;
+    background-color: #333333;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    
+}
+.menu li{
+    padding: 0px 20px;
+}
+.menu li a{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.menu a{
+    color: white;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+.menu li a:hover{
+    color: brown;
+}
+@media screen and ( max-width : 850px ) {
+    .menu   {
+    display: none;
+        
+    }
+    .menu img {
+        display: flex;
+    }
+    
+    
+}
+/*---------------------------------------------sectione une----------------------------------------------------------*/
+
+#SectionUne{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 10% 0 10% 0;
+}
+a{
+    text-decoration: non;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.TitreSectionUne{
+    color: #333333;
+    text-align: center;
+    padding: 3%;
+}
+.SectionUneContainer{
+    display: flex;
+    position: relative;
+}
+.SectionUneContainer{
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: #fff;
+}
+.card{
+    width: 310px;
+    height: 400px;
+    background-color: black;
+    border-radius: 1rem;
+    padding: 4rem 2rem 0;
+    border: 2px solid #0000;
+    color: #E9EAEC;
+ 
+}
+.cardImg{
+    position: absolute;
+    width: 260px ;
+}
+.cardInfo{
+    transform: translateY(13.2rem);
+    text-align: center;
+}
+.cardTitre{
+    font-size: 22px;
+    color: red;
+    margin-bottom: 1.25rem;
+}
+.cardPrix{
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+.cardDescription{
+    font-size: medium;
+    text-align: initial;
+    margin-bottom: 1.25rem;
+    opacity: 0;
+}
+.cardButton{
+    width: max-content;
+    padding: 12px 29px;
+    background-color: red;
+    border-radius: 23px;
+    font-weight: 600;
+    transition: 2s;
+    color: #E9EAEC;
+    opacity: 0;
+}
+.card:hover{
+    box-shadow: 0 19px 40px 4px red ;
+
+}
+
+.cardImg,.cardInfo,.cardPrix,.cardDescription,.cardTitre{
+    transition: .5s;
+    
+}
+
+.card:hover .cardImg {
+    transform:  translate(-1.5rem, -9.5rem) rotate(20deg);
+}
+
+.card:hover .cardInfo{
+    transform: translateY(4.8rem) ;
+}
+.card:hover .cardDescription, .card:hover .cardButton{
+    transition: .2s;
+    opacity: 1;
+}
+.cardButton:hover{
+    box-shadow:0 19px 25px 1px red;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+#SectionDeux{
+    height: 50vh;
+    width: 100%;
+    background-image: url(image/imgBalenciaga/812375.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
